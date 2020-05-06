@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+/home/lonewolf/codenin/Java and DSA/.metadata/.plugins/org.eclipse.jdt.core
+1914843824.index
+953566020.index
+3486407525.index

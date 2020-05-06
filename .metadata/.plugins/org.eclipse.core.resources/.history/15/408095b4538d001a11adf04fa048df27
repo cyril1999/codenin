@@ -1,0 +1,9 @@
+package classes_and_objects;
+
+public class Student {
+
+	String name; //can be accessed only by classes
+private	int roll_no; //can be accessd only inside this class
+public double average;
+	
+}

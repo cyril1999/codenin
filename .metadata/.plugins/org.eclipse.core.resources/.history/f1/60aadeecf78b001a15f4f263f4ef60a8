@@ -1,0 +1,10 @@
+package MultidimensionalArrays;
+
+public class printSpiral {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

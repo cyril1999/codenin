@@ -1,0 +1,9 @@
+package classes_and_objects;
+
+ class Student {
+
+	String name;
+private	int roll_no;
+public double average;
+	
+}

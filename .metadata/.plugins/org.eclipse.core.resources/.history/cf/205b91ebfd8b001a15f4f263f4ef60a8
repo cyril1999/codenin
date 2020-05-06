@@ -1,0 +1,57 @@
+package MultidimensionalArrays;
+import java.util.Scanner;
+
+public class printSpiral {
+
+static Scanner s = new Scanner(System.in);
+	
+	public static int[][] takeInput2D(){
+		int numRows = s.nextInt();
+		int numCols = s.nextInt();
+		int[][] input = new int[numRows][numCols];
+		for(int i = 0; i < numRows; i++){
+			for(int j = 0; j < numCols; j++){
+				input[i][j] = s.nextInt();
+			}
+		}
+		return input;
+	}
+	
+	public static void main(String[] args) {
+		int a[][] = takeInput2D();
+		solution.spiralPrint(a);
+	}
+
+}
+
+class solution {
+
+	public static void spiralPrint(int matrix[][])
+	{
+	 int rowStart = 0;
+	 int rowEnd = matrix.length-1;
+	 int colStart = 0;
+	 int colEnd = matrix[0].length-1;
+		
+		while (rowStart<=rowEnd || colStart<=colEnd)
+		{
+			for(int i = colStart; i <= colEnd; i++){
+				System.out.print(matrix[rowStart][i] + " ");
+			}
+			rowStart++;
+			for(int i = rowStart; i <= rowEnd; i++){
+				System.out.print(matrix[i][colEnd] + " ");
+			}
+			colEnd--;
+			for(int j = colEnd; j >=colStart; j--){
+				System.out.print(matrix[rowEnd][j] + " ");
+			}
+			rowEnd--;
+			for(int j = rowEnd; j >= rowStart; j--){
+				System.out.print(matrix[j][colStart] + " ");
+			colStart++;
+			}
+		}
+		
+	}
+}	

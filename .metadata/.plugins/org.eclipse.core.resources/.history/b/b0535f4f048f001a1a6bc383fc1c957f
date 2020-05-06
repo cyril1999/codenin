@@ -1,0 +1,37 @@
+package classes_and_objects;
+
+public class Student {
+
+	String name; //can be accessed only by classes
+private	int roll_no; //can be accessd only inside this class
+public double average;
+	
+//Creating constructor with argument forces the user to enter arguments while creating objects
+public Student(String name, int roll_no) //We can create constructors without arguments to initiate with our values instead of user defined
+{
+	this.name = name;
+	this.roll_no = roll_no;
+}
+public Student(String name) //We can create constructors with 1 argument to initiate with our values instead of user defined
+{
+	this.name = name;
+	
+}
+
+
+public int getRoll_no() 
+	{
+		return roll_no;
+	}
+	
+	public void setRoll_no(int roll_no) //Allows files to set valid roll number to the object
+	{	
+		if(roll_no<=0)
+		{
+			return ; //Disallows from setting an invalid roll number
+		}
+		this.roll_no = roll_no; //Doesn't set valid roll number if "this" keyword isn't used because code can't differentiate
+		//Therefore not having an effect because value of local variable of setter method will be assigned to the local variable itself
+//THis keyword tells you to assign value of variable to variable of current object
+	}
+}

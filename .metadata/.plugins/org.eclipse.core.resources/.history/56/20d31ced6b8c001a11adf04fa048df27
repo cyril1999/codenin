@@ -1,0 +1,19 @@
+package classes_and_objects;
+import java.util.Scanner;
+public class Studentuse {
+
+	public static void main(String[] args) {
+		
+		//Scanner s = new Scanner(System.in);
+		
+//Object of student is instantiated in this file to keep things organized		
+		Student s1 = new Student();
+		Student s2 = new Student();
+
+		System.out.println(s1);//prints address of object created in the following format: 
+		//packagename.classname.address_of_object
+		//
+	
+	}
+
+}

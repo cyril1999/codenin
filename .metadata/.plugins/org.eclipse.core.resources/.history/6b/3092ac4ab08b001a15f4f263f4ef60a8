@@ -1,0 +1,21 @@
+package MultidimensionalArrays;
+
+public class storageof2dArrays {
+
+	public static void main(String[] args) {
+
+		int[][] arr2d = {{1,2,3,4},{1,2},{1,2,3}};
+//The above statement stores 3 different 1d arrays in memory
+//and stores a 1d array of addresses of those 1d arrays 
+//The address of the array containing references to the 1d arrays
+//is returned to the variable arr2d
+		System.out.println(arr2d);
+		System.out.println(arr2d[0]);
+		System.out.println(arr2d[1]);
+		System.out.println();
+		System.out.println(arr2d.length);
+		System.out.println(arr2d[0].length);
+		System.out.println(arr2d[1].length);
+	}
+
+}
